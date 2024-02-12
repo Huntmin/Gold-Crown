@@ -18,7 +18,7 @@
         <div class="header__container">
           <nav class="header__nav">
             <a href="/">
-              <img src="./images/c_logo.png" alt="Логотип" />
+              <img class="header__logo" src="./images/Log_wh.png" alt="Логотип" />
             </a>
             <ul class="header__menu">
               <li>
@@ -46,8 +46,8 @@
             </button>
             <a class="mobile-menu__logo" href="/">
               <img
-                src="./images/logo-dark.svg"
-                alt="Логотип сучасної пекарні"
+                src="./images/Log_brw.png"
+                alt="Логотип "
               />
             </a>
             <ul class="mobile-menu__list">
@@ -83,9 +83,9 @@
           <h1 class="hero-section__title">
             Золота Корона
           </h1>
-          <h2 class="hero-section__text">Ласкаво просимо до місця, де розкіш<br> поєднується з доступністю</h2>
-          <button
-            class="hero-section__button button modal-btn-open"
+          <h2 class="hero-section__text">Ласкаво просимо </h2>
+          <button 
+            class="hero-section__button button"
             type="button"
           >
             Замовити дзвінок
@@ -131,8 +131,8 @@
             </div>
             <img  
               class="traditions-section__image"
-              srcset="./images/baker-man.jpg 1x"
-              src="./images/baker-man.jpg"
+              srcset="./images/photo-37.jpg 1x"
+              src="./images/photo-37.jpg"
               alt="Готель"
             />
           </div>
@@ -160,7 +160,7 @@
                   <article class="format-card">
                     <img
                       class="format-card__image"
-                      src="./images/hotel_zolota_korona_standart_2_.jpg"
+                      src="./images/IMG_20240212_125045_680.jpg"
                       alt="Walrus format"
                     />
                     <h3 class="format-card__title" lang="en">Стандарт</h3>
@@ -198,7 +198,7 @@
                   <article class="format-card">
                     <img
                       class="format-card__image"
-                      src="./images/hotel_zolota_korona_lux_7_.jpg"
+                      src="./images/photo_5355309316413969609_y.jpg"
                       alt="Handlebar format"
                     />
                     <h3 class="format-card__title" lang="en">Люкс</h3>
@@ -255,7 +255,7 @@
                   <article class="format-card">
                     <img
                       class="format-card__image"
-                      src="./images/hotel_zolota_korona_lux_7_.jpg"
+                      src="./images/photo_5355309316413969609_y.jpg"
                       alt="Handlebar format"
                     />
                     <h3 class="format-card__title" lang="en">Люкс</h3>
@@ -364,9 +364,9 @@
                       src="./images/unnamed.jpg"
                       alt="Walrus format"
                     />
-                    <h3 class="format-card__title" lang="en">Масаж</h3>
+                    <!-- <h3 class="format-card__title" lang="en">Масаж</h3> -->
                     <div class="format-card__text">
-                      <p>Площа: до 120 м2</p>
+                      <p>Масаж</p>
                       <p>Меню: розширене меню</p>
                       <p>
                         Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
@@ -383,9 +383,9 @@
                       src="./images/Tour-vyhodnogo-dnya-karpaty-1024x683.jpg"
                       alt="Horseshoe format"
                     />
-                    <h3 class="format-card__title" lang="en">Ескурсії</h3>
+                    <!-- <h3 class="format-card__title" lang="en">Ескурсії</h3> -->
                     <div class="format-card__text">
-                      <p>Площа: до 120 м2</p>
+                      <p>Ескурсії</p>
                       <p>Меню: розширене меню</p>
                       <p>
                         Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
@@ -402,9 +402,9 @@
                       src="./images/kosmetologiya.jpg"
                       alt="Handlebar format"
                     />
-                    <h3 class="format-card__title" lang="en">Косметологія</h3>
+                    <!-- <h3 class="format-card__title" lang="en">Косметологія</h3> -->
                     <div class="format-card__text">
-                      <p>Площа: до 120 м2</p>
+                      <p>Косметологія</p>
                       <p>Меню: розширене меню</p>
                       <p>
                         Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
@@ -541,14 +541,33 @@
                     required
                   />
                 </div> -->
-
-                <div class="modal__form-field input" > <form>
-                  <label class="label_room" for="check-in-date">Дата заїзду:</label>
-                  <input class="input__control" type="text" id="check-in-date" name="check-in-date" readonly>
-          
-                  <label class="label_room" for="check-out-date">Дата виїзду:</label>
-                  <input class="input__control" type="text" id="check-out-date" name="check-out-date" readonly>
-              </form></div>
+                <div class="modal__form-field input">
+                  <label class="label_room" for="check-in-date">
+                    Дата заїзду:
+                  </label>
+                  <input
+                    class="input__control"
+                    type="date"
+                    name="check-in-date"
+                    id="check-in-date"
+                    placeholder="Дата заїзду"
+                    required
+                  />
+                </div>
+      
+                <div class="modal__form-field input">
+                  <label class="label_room" for="check-out-date">
+                    Дата виїзду:
+                  </label>
+                  <input
+                    class="input__control"
+                    type="date"
+                    name="check-out-date"
+                    id="check-out-date"
+                    placeholder="Дата виїзду"
+                    required
+                  />
+                </div>
       
                 <div class="modal__form-field input">
                   <label class="label_room" for="room_type">Оберіть тип кімнати:</label>
@@ -699,6 +718,33 @@
               required
             />
           </div>
+          <div class="modal__form-field input">
+            <label class="label_room" for="check-in-date">
+              Дата заїзду:
+            </label>
+            <input
+              class="input__control"
+              type="date"
+              name="check-in-date"
+              id="check-in-date"
+              placeholder="Дата заїзду"
+              required
+            />
+          </div>
+
+          <div class="modal__form-field input">
+            <label class="label_room" for="check-out-date">
+              Дата виїзду:
+            </label>
+            <input
+              class="input__control"
+              type="date"
+              name="check-out-date"
+              id="check-out-date"
+              placeholder="Дата виїзду"
+              required
+            />
+          </div>
 
           <!-- <div class="modal__form-field input">
             <label class="input__label visually-hidden" for="user-email">
@@ -713,14 +759,7 @@
               required
             />
           </div> -->
-          <div class="modal__form-field input" > <form>
-            <label class="label_room" for="check-in-date">Дата заїзду:</label>
-            <input class="input__control" type="text" id="check-in-date" name="check-in-date" readonly>
-    
-            <label class="label_room" for="check-out-date">Дата виїзду:</label>
-            <input class="input__control" type="text" id="check-out-date" name="check-out-date" readonly>
-        </form></div>
-
+        
           <div class="modal__form-field input">
             <label class="label_room" for="room_type">Оберіть тип кімнати:</label>
             <select class="select_room" name="room_type" id="room_type">
